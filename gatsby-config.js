@@ -31,6 +31,28 @@ module.exports = {
                 sourceUrlPath: `fields.url`,
                 pageContextProperty: `menus`,
             }
+        },
+        {
+            resolve: 'gatsby-plugin-web-font-loader',
+            options: {
+              google: {
+                families: ['Open Sans', 'sans-serif']
+              }
+            }
+          },
+          {
+            resolve: 'gatsby-plugin-web-font-loader',
+            options: {
+              google: {
+                families: ['Playfair Display', 'Playfair Display']
+              }
+            },
+          
+          resolve: `gatsby-plugin-manifest`,
+          options: {
+            icon:`static/favi.png`,
+              
+          }
         }
     ]
-};
+  }

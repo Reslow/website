@@ -17,30 +17,90 @@ export const query = graphql`
 `;
 
 export default class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { currentCategory: "all" };
+  }
+  
     render() {
-        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/posts'), 'frontmatter.date', 'desc');
+      let display_posts = _.orderBy(
+        getPages(this.props.pageContext.pages, "/posts"),
+        "frontmatter.date",
+        "desc"
+      );
+      let filteredPosts = display_posts.filter(
+        (post) =>
+          post.frontmatter.category === this.state.currentCategory ||
+          this.state.currentCategory === "all"
+      );
         return (
-            <Layout {...this.props}>
-              {_.get(this.props, 'pageContext.frontmatter.has_intro', null) && (
-              <div className="intro">
-                <div className="inner-md">
-                  {_.get(this.props, 'pageContext.frontmatter.intro_content', null) && (
-                  <div className="intro-text">
-                    {markdownify(_.get(this.props, 'pageContext.frontmatter.intro_content', null))}
-                  </div>
-                  )}
-                  {_.get(this.props, 'pageContext.frontmatter.intro_actions', null) && (
-                  <div className="intro-cta">
-                    {_.map(_.get(this.props, 'pageContext.frontmatter.intro_actions', null), (action, action_idx) => (
-                    <Link key={action_idx} to={withPrefix(_.get(action, 'url', null))} className={classNames({'button': (_.get(action, 'style', null) === 'primary') || (_.get(action, 'style', null) === 'secondary'), 'button-secondary': _.get(action, 'style', null) === 'secondary'})} {...(_.get(action, 'new_window', null) ? ({target: '_blank', rel: 'noopener'}) : null)}>{_.get(action, 'label', null)}</Link>
-                    ))}
-                  </div>
+            <Layout {...this.props}>¨
+
+
+<div className="categories">
+         
+      
+          <div className="buttonCategories">
+            <button onClick={() => this.setState({ currentCategory: "all" })}>All</button>
+            <button onClick={() => this.setState({ currentCategory: "userStudies" })}>User studies</button>
+            <button onClick={() => this.setState({ currentCategory: "PhotosAndIllu" })}>Photography and illustrations</button>
+            <button onClick={() => this.setState({ currentCategory: "Ui" })}>User interfaces</button>
+          </div>
+          {_.get(this.props, "pageContext.frontmatter.has_intro", null) && (
+            <div className="inner-md">
+              {_.get(
+                this.props,
+                "pageContext.frontmatter.intro_content",
+                null
+              ) && (
+                <div className="intro-text">
+                  {markdownify(
+                    _.get(
+                      this.props,
+                      "pageContext.frontmatter.intro_content",
+                      null
+                    )
                   )}
                 </div>
-              </div>
               )}
+              {_.get(
+                this.props,
+                "pageContext.frontmatter.intro_actions",
+                null
+              ) && (
+                <div className="intro-cta">
+                  {_.map(
+                    _.get(
+                      this.props,
+                      "pageContext.frontmatter.intro_actions",
+                      null
+                    ),
+                    (action, action_idx) => (
+                      <Link
+                        key={action_idx}
+                        to={withPrefix(_.get(action, "url", null))}
+                        className={classNames({
+                          button:
+                            _.get(action, "style", null) === "primary" ||
+                            _.get(action, "style", null) === "secondary",
+                          "button-secondary":
+                            _.get(action, "style", null) === "secondary",
+                        })}
+                        {...(_.get(action, "new_window", null)
+                          ? { target: "_blank", rel: "noopener" }
+                          : null)}
+                      >
+                        {_.get(action, "label", null)}
+                      </Link>
+                    )
+                  )}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
               <div className="post-feed">
-                {_.map(display_posts, (post, post_idx) => (
+                {_.map(filteredPosts, (post, post_idx) => (
                 <article key={post_idx} className="post post-card">
                   <div className="post-card-inside">
                     {_.get(post, 'frontmatter.thumb_img_path', null) && (
@@ -67,7 +127,7 @@ export default class Home extends React.Component {
                     </div>
                   </div>
                 </article>
-                ))}
+                ))} 
               </div>
             </Layout>
         );

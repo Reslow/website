@@ -2,9 +2,7 @@
  * Site Header
  */
 .site-header {
-  background: #fff;
-  border-top: 5px solid _palette(accent);
-  border-bottom: 1px solid _palette(border);
+  background: rgb(255, 255, 255);
   padding-bottom: 1.33333em;
   padding-top: 1.33333em;
 }
@@ -16,7 +14,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
 }
+
+
 
 .site-branding {
   -webkit-box-flex: 0;
@@ -37,13 +38,14 @@
   }
 }
 
-.site-title {
+.title {
   color: _palette(secondary);
   font-family: _font(secondary);
-  font-size: 1.33333em;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
   margin: 0;
+  padding-left:20px;
 }
 
 .menu {

@@ -4,7 +4,6 @@ import _ from 'lodash';
 
 import {withPrefix} from '../utils';
 import Header from './Header';
-import Subscribe from './Subscribe';
 import Footer from './Footer';
 
 export default class Body extends React.Component {
@@ -31,9 +30,7 @@ export default class Body extends React.Component {
                         {this.props.children}
                       </main>
                     </div>
-                    {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_subscribe', null) && (
-                      <Subscribe {...this.props} />
-                    )}
+                  
                     <Footer {...this.props} />
                   </div>
             </React.Fragment>

@@ -20,7 +20,8 @@
 
 .post-title {
   font-size: 2.66667em;
-  margin: 0 0 1.66667rem;
+  padding-left: 0px;
+
 
   a {
     border: 0;
@@ -37,13 +38,13 @@
   line-height: 1.5;
 }
 
+
 .post-thumbnail {
   display: block;
   margin-bottom: 2.5rem;
 
-  img {
-    width: 100%;
-  }
+   
+  
 }
 
 /* Post feed */
