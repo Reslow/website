@@ -22,11 +22,13 @@ export default class Body extends React.Component {
                     <link rel="canonical" href={_.get(this.props, 'pageContext.frontmatter.canonical_url', null)}/>
                     )
                     )}
+                
                 </Helmet>
                   <div id="page" className={'site layout-' + _.get(this.props, 'pageContext.site.siteMetadata.layout_style', null) + ' palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)}>
                     <Header {...this.props} />
                     <div id="content" className="site-content outer">
                       <main id="main" className="site-main inner">
+                     
                         {this.props.children}
                       </main>
                     </div>
