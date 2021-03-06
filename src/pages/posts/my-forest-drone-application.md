@@ -11,7 +11,7 @@ template: post
 ---
 **The project** was given by The Swedish forest agency. In this project I worked with four other students. We developed a design of an interface for a mobile application that helps forest workers to plan and overview the forest. The Swedish forest agency wished to motivate more workers to use drones in their workday. It was important to develop an interface that forest workers could understand.
 
-## Designprocess
+## Design process
 ![projects process](/images/proDrone.svg)
 
 ## Solution

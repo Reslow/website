@@ -13,7 +13,7 @@ template: post
 
 **For 9 weeks** me and three other students researched about how vets diagnose cancer in dogs, to design an application which could visualize result from a rapid test. We worked with a company which had a new technique of measuring blood, the new technique makes it possible to catch some types of cancer in an earlier stage.
 
-## Designprocess
+## Design process
 ![projects process](/images/prodia.svg)
 
 ## Solution
