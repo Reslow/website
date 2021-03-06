@@ -34,7 +34,7 @@ export default class Home extends React.Component {
           this.state.currentCategory === "all"
       );
         return (
-            <Layout {...this.props}>¨
+            <Layout {...this.props}>
 
 
 <div className="categories">

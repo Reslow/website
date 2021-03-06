@@ -24,7 +24,7 @@ template: post
 ## UI
 ![user interface](/images/vacMouckup.png)
 
-## Tresure
+## Treasure
 
 According to our research, acceptance is built on the user background and experience and the perceived usefulness and usability of the product.
 The interface needs to be simple and only have the function needed for the vets to reach their goal. It is important with specificity in the test, we also found that the image of the company behind the product is important.

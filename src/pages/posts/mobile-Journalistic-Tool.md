@@ -19,8 +19,8 @@ This wireframe are based on the company´s existing writing tool and the case st
 
 ![mojotool-wireframe](/images/mojo.png)
 
-## Tresure
+## Treasure
 
 The common attitude to work with the mobile as a tool are positiv. But not writing with it
-An mobile application could support an journalist on the way toward an assignment or when he or she happen to be at the spot of an event.
+A mobile application could support an journalist on the way toward an assignment or when he or she happen to be at the spot of an event.
 The value of an mobile application is in the quick way of communicating and sharing information

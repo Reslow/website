@@ -22,10 +22,10 @@ My forest drone app is a concept of a mobile application that helps forest worke
 ## UI
 ![user interface](/images/forestapp.png)
 
-## Tresure
+## Treasure
 
  When flying a drone it is important to feel in control. A lot of workers in the forest today are not use to new technology
  and needs an application that is easy to use and understand.
   
-The projectowner had a plan of gathering image material to train a AI of identifying objects when flying. However there is a fear of feeling watched from users.
+The project owner had a plan of gathering image material to train a AI of identifying objects when flying. However there is a fear of feeling watched from users.
 I have a theory that users could feel less afraid if they had more control over what is happening. Use of transparency is one way of giving more control to users. Show the users the images that has been gathered, Just a thought..
