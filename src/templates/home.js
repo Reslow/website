@@ -43,7 +43,6 @@ export default class Home extends React.Component {
           <div className="buttonCategories">
             <button onClick={() => this.setState({ currentCategory: "all" })}>All</button>
             <button onClick={() => this.setState({ currentCategory: "userStudies" })}>User studies</button>
-            <button onClick={() => this.setState({ currentCategory: "PhotosAndIllu" })}>Photography and illustrations</button>
             <button onClick={() => this.setState({ currentCategory: "Ui" })}>User interfaces</button>
           </div>
           {_.get(this.props, "pageContext.frontmatter.has_intro", null) && (
