@@ -5,8 +5,8 @@ subtitle:
 template: about
 ---
 **Hello!** <br>
-My name is Fanny, I am 28 and are currently living in gothenbourg, Sweden.  
-I have studied the use of media tools for almost 6 years and have a bachelor degree in informatics, interaction design (since 2019).
+My name is Fanny (29)  I live in gothenbourg, Sweden
+I have a bachelor degree in informatics, interaction design (since 2019). and are now aiming for a degree in front end developing.  
 
 + HTML, CSS , javascript 
 + creative suite
