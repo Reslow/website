@@ -1,20 +1,24 @@
 // Font.
 $font: (
-  primary: ("Open sans"),
-  secondary: ("Playfair Display")
+  primary: (
+    "Open sans",
+  ),
+  secondary: (
+    "Playfair Display",
+  ),
 );
 
 // Palette.
 $palette: (
-  primary:       #2e2f36,
-  secondary:     darken(#373738, 15%),
-  meta:          lighten(#536171, 25%),
-  border:        lighten(#536171, 52%),
-  bg:            lighten(#333b45, 58%),
-  accent:        #2e2f36,
-  accent-blue:   #26272c,
-  accent-black:  #333b45,
-  accent-red:    #FF4133
+  primary: #2e2f36,
+  secondary: darken(#373738, 15%),
+  meta: lighten(#536171, 25%),
+  border: lighten(#536171, 52%),
+  bg: lighten(#333b45, 58%),
+  accent: #2e2f36,
+  accent-blue: #26272c,
+  accent-black: #333b45,
+  accent-red: #fc5c51,
 );
 
 @import "imports/functions";

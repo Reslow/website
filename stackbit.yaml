@@ -228,7 +228,7 @@ models:
         description: The text content of the subscribe section.
   home:
     type: page
-    label: Home
+    label: homepage
     layout: home
     file: index.md
     hideContent: true

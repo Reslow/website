@@ -1,6 +1,6 @@
 {
-    "title": "Fanny Reslow",
-    "description": "This is my page where I am sharing my work and progress in the design world.",
+    "title": "F.R portfolio",
+    "description": "User centered design, front end development, student, glasses, coffee ./ ",
     "layout_style": "grid",
     "palette": "purple",
     "header": {
@@ -30,7 +30,7 @@
     "footer": {
         "type": "footer",
         "template": "footer",
-        "content": "&copy; Fanny Reslow 2020 ",
+        "content": "&copy; Fanny Reslow 2021 ",
         "links": [],
         "has_social": true,
         "social_links": [

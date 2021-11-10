@@ -58,7 +58,6 @@ template {
 
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
 }
 
 a:focus {
@@ -72,8 +71,7 @@ a:hover {
 
 abbr[title] {
   border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
+
 }
 
 b,

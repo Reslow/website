@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Homepage
 has_intro: true
 
 
